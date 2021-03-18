@@ -6,7 +6,7 @@ import { Product } from '../product.model';
   templateUrl: './product.component.html',
 })
 export class ProductComponent {
-  @Input() product: Product;
+  @Input() product!: Product;
   @Output() productClick: EventEmitter<any> = new EventEmitter();
 
   addCart() {
